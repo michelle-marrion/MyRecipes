@@ -8,9 +8,10 @@ namespace MesRecettes.Models
     public class Ingredient
     {
         public int Id { get; set; }
+        public int Amount { get; set; }
         public  string Name { get; set; }
         public virtual int UnitOfMeasureId { get; set; }
-        public int Amount { get; set; }
+        
         public UnitsOfMeasure UnitsOfMeasure { get; set; }
     }  
 

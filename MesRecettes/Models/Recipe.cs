@@ -9,9 +9,9 @@ namespace MesRecettes.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
-
-        public int BakeTemperature { get; set; }
-        public int BackTime { get; set; }
+        public MeasurementType MeasurementType { get; set; }
+        public int? BakeTemperature { get; set; }
+        public int? BackTime { get; set; }
         public string Instructions { get; set; }
         public int FoodTypeId { get; set; }
         public int FoodEthnicityId { get; set; }
